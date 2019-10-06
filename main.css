@@ -8,7 +8,7 @@ main {
 
 /* first section */
 h1 {
-    font-size: 110%;
+    font-size: 130%;
     text-align: center;
 }
 
@@ -34,7 +34,17 @@ p {
 }
 
 .time {
-    margin-left: 5px;
+    margin-left: 10px;
+}
+
+.time, .eye{
+    color: #919191;
+}
+
+.fas.fa-eye,
+.fas.fa-clock
+{
+    font-size: 15px;
 }
 
 /* big img section */
@@ -90,7 +100,7 @@ p {
 .frame-rank {
     display: flex;
     width: 80%;
-    margin-top: 35px;
+    margin-top: 40px;
 }
 
 .owner-picture{
@@ -101,6 +111,7 @@ p {
     border-radius: 200px;
     box-shadow: 1px 1px 4px 1px rgba(128, 128, 128, 0.3);
     margin-right: 25px;
+    background-color: #ffffff;
 }
 
 .fas.fa-user{
@@ -140,13 +151,18 @@ p {
 .follow-text p {
     margin-top: 15px;
     text-align: left;
+    font-size: 15px;
+}
+
+.follow-text p span:first-child{
+    color: #4CAF50;
 }
 
 /* TAGS */
 
 .tags {
     width: 80%;
-    margin-top: 35px;
+    margin-top: 40px;
 }
 
 .fas.fa-shipping-fast{
@@ -185,29 +201,101 @@ p {
 .cir-yellow,
 .cir-turq
 { 
-    border-radius: 200px; 
-    width: 20px;
-    height: 20px;
-    margin-right: 6px;
+    /* border-radius: 200px; 
+    width: 25px;
+    height: 25px;*/
+    margin-right: 10px;
+    /*box-shadow: 1px 1px 1px 1px rgba(128, 128, 128, 0.3);*/
 }
 
 .cir-white {
+    margin-left: 18px;
+}
+
+.fab.fa-java,
+.fab.fa-js,
+.fab.fa-swift,
+.fab.fa-php,
+.fab.fa-python,
+.fas.fa-gem
+{
+    font-size: 20px;
+}
+
+.fab.fa-java{ color: #000000}
+.fab.fa-js{ color: #e5fc67 }
+.fab.fa-swift{color: #df730d}
+.fab.fa-php{color: #499fd8}
+.fab.fa-python{color: #4CAF50}
+.fas.fa-gem{ color: #960707}
+
+/* last part main */
+
+.two-circle{
+    margin-top: 50px;
+    width: 80%;
+}
+
+.first-circle{
+    display: flex;
+    justify-content: start;
+}
+
+.fc-usa, .mini-ebay {
+    width: 70px;
+    height: 70px;
+    border-radius: 200px;
+    box-shadow: 1px 1px 1px 1px rgba(128, 128, 128, 0.3);
+    margin-bottom: 15px;
     background-color: #ffffff;
-    border: 0.04em solid;
-    margin-left: 15px;
 }
-.cir-black{
-    background-color: #000000;
+.info-text-circle{
+    width: 80%;
+    margin-bottom: 25px;
 }
-.cir-blue{
-    background-color: #1b6596;
+
+.second-circle{
+    display: flex;
+    justify-content: start;
 }
-.cir-red{
-    background-color: #df0d0d;
+
+.fc-text{
+    margin-right: 25px;
 }
-.cir-yellow{
-    background-color: #eeeb52;
+
+.fc-usa{
+    padding: 22px 17px;
+    margin-right: 90px;
 }
-.cir-turq{
-    background-color: #49d8d8;
+
+.mini-ebay {
+    padding: 24px 15px;
+    margin-right: 10px;
+}
+
+.mini-img-ebay{
+    width: 45px;
+}
+
+.fc-usa span{
+    font-size: 20px;
+}
+
+.text-circle-title{
+    font-size: 15px;
+    color: #757575;
+}
+
+.text-circle{
+    font-size: 15px;
+    color: #919191;
+}
+
+.fas.fa-plus-circle{
+    color: #4CAF50;
+    font-size: 25px;
+}
+
+.plus-circle{
+    margin-top: 20px;
 }
