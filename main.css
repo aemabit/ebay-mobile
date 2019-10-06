@@ -8,7 +8,7 @@ main {
 
 /* first section */
 h1 {
-    font-size: 130%;
+    font-size: 140%;
     text-align: center;
 }
 
@@ -29,7 +29,7 @@ p {
 .record {
     display: flex;
     flex-direction: row;
-    width: 58%;
+    width: 69%;
     justify-content: center;
 }
 
@@ -114,9 +114,10 @@ p {
     background-color: #ffffff;
 }
 
-.fas.fa-user{
-    font-size: 30px;
-    padding: 18px 22px;
+.user-picture{
+    object-fit: cover;
+    width: 70px;
+    height: 70px;
 }
 
 .rank {
