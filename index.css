@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+@media only screen and (max-width: 450px) {
+
 #menu-container {
     display: flex;
     justify-content: center;
@@ -100,4 +107,6 @@ button {
 
 .hr-shadow {
     border-color: rgba(128, 128, 128, 0.05);
+}
+
 }

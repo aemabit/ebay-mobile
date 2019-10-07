@@ -1,3 +1,5 @@
+@media only screen and (max-width: 450px) {
+
 main {
     flex-direction: column;
     display: flex;
@@ -51,6 +53,7 @@ p {
 
 .big-img {
     width: 80%;
+    min-width: 310px;
     height: 300px;
     margin-bottom: 70px;
 }
@@ -58,6 +61,7 @@ p {
 .ppl-img {
     width: 100%;
     height: 100%;
+    box-shadow: 1px 1px 6px 1px rgba(0,0,0,0.20);
 }
 
 /* carrusel */
@@ -76,12 +80,18 @@ p {
 
 .carrusel-img{
     object-fit: cover;
-    width: 55px;
+    width: 5.7vh;
     height: 55px;
+    transition: 0.3s;
+}
+
+.carrusel-img:hover {
+    transform:scale(1.25);
 }
 
 .btn-fixed{
-    padding-top: 12px;
+    padding-top: 18px;
+    z-index: 999;
 }
 
 .left, .right{
@@ -94,6 +104,7 @@ p {
 
 .fas.fa-angle-right, .fas.fa-angle-left{
     color: #499fd8;
+    padding-top: 2px;
 }
 
 /* RANK */
@@ -158,6 +169,7 @@ p {
 .follow-text p span:first-child{
     color: #4CAF50;
 }
+
 
 /* TAGS */
 
@@ -299,4 +311,6 @@ p {
 
 .plus-circle{
     margin-top: 20px;
+}
+
 }

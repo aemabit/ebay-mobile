@@ -1,3 +1,7 @@
+/* Mobile Styles */
+@media only screen and (max-width: 450px) {
+    
+
 #last-page{
     height: 500px;
     display: flex;
@@ -53,6 +57,7 @@ footer {
 }
 
 .menu-footer{
+    justify-content: center;
     width: 80%;
     justify-items: start;
     display: grid;
@@ -68,4 +73,6 @@ footer {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+}
+
 }
