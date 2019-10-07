@@ -46,4 +46,15 @@
     object-fit: cover;
 }
 
+
+.pulse{
+    transition: 0.2s;
+}
+
+.pulse:hover{
+    animation-duration: 0.3s;
+    animation-delay: 0.3s;
+    animation-iteration-count: infinite;
+}
+
 }
