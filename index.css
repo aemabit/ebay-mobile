@@ -15,7 +15,7 @@ body{
 }
 
 .mobile-design{
-    visibility: hidden;
+    display: none;
 }
 
 .first-window {
@@ -32,11 +32,11 @@ body{
 @media only screen and (max-width: 450px) {
 
     .mobile-design{
-        visibility: visible;
+        display: block;
     }
 
     .first-window {
-        visibility: hidden;
+        display: none;
     }
 
     #menu-container {
