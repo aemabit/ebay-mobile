@@ -9,104 +9,575 @@ a {
     color: #000000;
 }
 
-@media only screen and (max-width: 450px) {
-
-#menu-container {
-    display: flex;
-    justify-content: center;
-    height: 85px;
-    margin-top: 25px;
-    text-align: center;
-}
-
 body{
     background-color: #f3f3f3;
     font-family: 'Ubuntu', sans-serif;
 }
 
-/* LOGO */
-
-.logo {
-    width: 120px;
+.mobile-design{
+    visibility: hidden;
 }
 
-.logo-container{
-    justify-content: flex-start;
-}
-
-/* MORE GRID */
-.more{
-    padding-top: 18px;
-    margin: 0px 8px 0px 4px;
-}
-
-.fas.fa-th {
-    font-size: 12px;
-    color: #8f8f8f;
-}
-
-/* FORM */
-
-.searching {
-    width: 36%;
-    height: 40px;
+.first-window {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px rgba(0,0,0,0.10);
+    text-transform: uppercase;
+    font-size: 25px;
 }
 
-.searching-ebay {
-    padding-top: 12px;
-}
+@media only screen and (max-width: 450px) {
 
-form input[type=text]{
-    width: 100%;
-    height: 30px;
-    min-width: 100px;
-    border: none;
-    box-shadow: 1px 1px 1px 1px rgba(128, 128, 128, 0.1);
-    background-color: #ffffff;
-}
+    .mobile-design{
+        visibility: visible;
+    }
 
-button {
-    background-color: #86b817;
-    border: none;
-    width: 30px;
-    height: 30px;
-    box-shadow: 0px 1px 0px 1px rgba(128, 128, 128, 0.1);
-}
+    .first-window {
+        visibility: hidden;
+    }
 
-.btn-form {
-    padding-top: 12px;
-    margin-right: 8px;
-}
+    #menu-container {
+        display: flex;
+        justify-content: center;
+        height: 85px;
+        margin-top: 25px;
+        text-align: center;
+    }
+    
+    /* LOGO */
 
-.fas.fa-search {
-    height: 25px;
-    width: 25px;
-    padding-top: 5px;
-    color: #ffffff;
-}
+    .logo {
+        width: 120px;
+    }
 
-/* FOTO PERFIL */
+    .logo-container{
+        justify-content: flex-start;
+    }
 
-.perfil {
-    height: 30px;
-    width: 30px;
-    border: none;
-    border-radius: 200px;
-    justify-content: flex-end;
-    box-shadow: 1px 1px 4px 1px rgba(128, 128, 128, 0.3);
-    margin-top: 12px;
-    background-color: #ffffff;
-}
+    /* MORE GRID */
+    .more{
+        padding-top: 18px;
+        margin: 0px 8px 0px 4px;
+    }
 
-.fab.fa-autoprefixer{
-    padding-top: 5px;
-    height: 25px;
-    width: 25px;
-}
+    .fas.fa-th {
+        font-size: 12px;
+        color: #8f8f8f;
+    }
 
-.hr-shadow {
-    border-color: rgba(128, 128, 128, 0.05);
-}
+    /* FORM */
+
+    .searching {
+        width: 36%;
+        height: 40px;
+        justify-content: center;
+    }
+
+    .searching-ebay {
+        padding-top: 12px;
+    }
+
+    form input[type=text]{
+        width: 100%;
+        height: 30px;
+        min-width: 100px;
+        border: none;
+        box-shadow: 1px 1px 1px 1px rgba(128, 128, 128, 0.1);
+        background-color: #ffffff;
+    }
+
+    button {
+        background-color: #86b817;
+        border: none;
+        width: 30px;
+        height: 30px;
+        box-shadow: 0px 1px 0px 1px rgba(128, 128, 128, 0.1);
+    }
+
+    .btn-form {
+        padding-top: 12px;
+        margin-right: 8px;
+    }
+
+    .fas.fa-search {
+        height: 25px;
+        width: 25px;
+        padding-top: 5px;
+        color: #ffffff;
+    }
+
+    /* FOTO PERFIL */
+
+    .perfil {
+        height: 30px;
+        width: 30px;
+        border: none;
+        border-radius: 200px;
+        justify-content: flex-end;
+        box-shadow: 1px 1px 4px 1px rgba(128, 128, 128, 0.3);
+        margin-top: 12px;
+        background-color: #ffffff;
+    }
+
+    .fab.fa-autoprefixer{
+        padding-top: 5px;
+        height: 25px;
+        width: 25px;
+    }
+
+    .hr-shadow {
+        border-color: rgba(128, 128, 128, 0.05);
+    }
+
+
+    #last-page{
+        height: 500px;
+        display: flex;
+        width: 100%;
+        justify-content: start;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .tetris-js-img{
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .last-big-img{
+        height: 500px;
+    }
+
+    /* footer */
+
+    footer {
+        height: 400px;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #020200;
+        color: #ffffff;
+    }
+
+    .top-footer{
+        display: flex;
+        justify-content: center;
+    }
+
+    .fas.fa-chevron-up{
+        margin-right: 10px;
+    }
+
+    .footer-ebay{
+        width: 80px;
+    }
+
+    .hr-footer{
+        border-color: #f2f2f2;
+        margin: 25px 0px 25px 0px;
+    }
+
+    .center-footer{
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu-footer{
+        justify-content: center;
+        width: 80%;
+        justify-items: start;
+        display: grid;
+        grid-template-columns: 100px 100px 100px;
+        grid-template-rows: 40px auto 40px; 
+        grid-column-gap: 20px;
+        grid-row-gap: 5px;
+        align-items: center;
+    }
+
+    .down-footer{
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .blue-p, .fas.fa-chevron-up{
+        color: #c51e1e;
+    }
+
+
+    main {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 25px;
+    }
+
+    /* first section */
+
+    h1 {
+        font-size: 140%;
+        text-align: center;
+    }
+
+    p {
+        text-align: center
+    }
+
+    .first{
+        justify-content: center;
+        margin-bottom: 25px;
+        width: 100%;
+    }
+
+    .first-title{
+        width: 100%;
+    }
+
+    .record {
+        display: flex;
+        flex-direction: row;
+        width: 69%;
+        justify-content: center;
+    }
+
+    .time {
+        margin-left: 10px;
+    }
+
+    .time, .eye{
+        color: #919191;
+    }
+
+    .fas.fa-eye,
+    .fas.fa-clock
+    {
+        font-size: 15px;
+    }
+
+    /* big img section */
+
+    .big-img {
+        width: 80%;
+        min-width: 340px;
+        height: 300px;
+        margin-bottom: 70px;
+    }
+
+    .ppl-img {
+        width: 100%;
+        height: 100%;
+        box-shadow: 1px 1px 6px 1px rgba(0,0,0,0.20);
+    }
+
+    /* carrusel */
+
+    .carrusel {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .multiple-img{
+        display: flex;
+        justify-content: center;
+        width: 80%;
+    }
+
+    .carrusel-img{
+        object-fit: cover;
+        width: 5.7vh;
+        height: 55px;
+        transition: 0.3s;
+    }
+
+    .carrusel-img:hover {
+        transform:scale(1.25);
+    }
+
+    .btn-fixed{
+        padding-top: 18px;
+        z-index: 999;
+    }
+
+    .left,
+    .right {
+        background-color: #ffffff;
+        border-radius: 200px;
+        height: 20px;
+        width: 20px;
+        z-index: 3;
+    }
+
+    .fas.fa-angle-right, .fas.fa-angle-left{
+        color: #499fd8;
+        padding-top: 2px;
+    }
+
+    /* RANK */
+
+    .frame-rank {
+        display: flex;
+        width: 80%;
+        margin-top: 40px;
+    }
+
+    .owner-picture{
+        justify-content: start;
+        height: 70px;
+        width: 70px;
+        border: none;
+        border-radius: 200px;
+        box-shadow: 1px 1px 4px 1px rgba(128, 128, 128, 0.3);
+        margin-right: 25px;
+        background-color: #ffffff;
+    }
+
+    .user-picture{
+        object-fit: cover;
+        width: 70px;
+        height: 70px;
+    }
+
+    .rank {
+        width: 150px;
+
+    }
+
+    .rank-bar {
+        background-color: #df0d0d;
+        width: 150px;
+        height: 6px;
+        border-radius: 4px;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .status {
+        width: 90%; 
+        height: 100%;
+        background-color: #4CAF50;
+        margin-top: 15px;
+    }
+
+    .fix-ninety {
+        margin-top: 28px;
+        margin-left: 10px;
+    }
+
+    .ninety {
+        color: #919191;
+    }    
+
+    .follow-text p {
+        margin-top: 15px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .follow-text p span:first-child{
+        color: #4CAF50;
+    }
+
+
+    /* TAGS */
+
+    .tags {
+        width: 80%;
+        margin-top: 40px;
+    }
+
+    .fas.fa-shipping-fast{
+        font-size: 30px;
+        color: #919191;
+        margin-right: 20px;
+    }
+
+    .text-tag{
+        font-size: 25px;
+        color: #919191;
+    }
+
+    /* COLORES */
+
+    .colores {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .colores span{
+        font-size: 20px;
+        color: #919191;
+    }
+
+    .select-color {
+        display: flex;
+        justify-content: start;
+        width: 100%;
+    }
+
+    .cir-white,
+    .cir-black,
+    .cir-blue,
+    .cir-red,
+    .cir-yellow,
+    .cir-turq
+    { 
+        margin-right: 10px;
+    }
+
+    .cir-white {
+        margin-left: 18px;
+    }
+
+    .fab.fa-java,
+    .fab.fa-js,
+    .fab.fa-swift,
+    .fab.fa-php,
+    .fab.fa-python,
+    .fas.fa-gem
+    {
+        font-size: 20px;
+    }
+
+    .fab.fa-java{ color: #000000}
+    .fab.fa-js{ color: #e5fc67 }
+    .fab.fa-swift{color: #df730d}
+    .fab.fa-php{color: #499fd8}
+    .fab.fa-python{color: #4CAF50}
+    .fas.fa-gem{ color: #960707}
+
+    /* last part main */
+
+    .two-circle{
+        margin-top: 50px;
+        width: 80%;
+    }
+
+    .first-circle{
+        display: flex;
+        justify-content: start;
+    }
+
+    .fc-usa, .mini-ebay {
+        width: 70px;
+        height: 70px;
+        border-radius: 200px;
+        box-shadow: 1px 1px 1px 1px rgba(128, 128, 128, 0.3);
+        margin-bottom: 15px;
+        background-color: #ffffff;
+    }
+
+    .info-text-circle{
+        width: 80%;
+        margin-bottom: 25px;
+    }
+
+    .second-circle{
+        display: flex;
+        justify-content: start;
+    }
+
+    .fc-text{
+        margin-right: 25px;
+    }
+
+    .fc-usa{
+        padding: 22px 17px;
+        margin-right: 90px;
+    }
+
+    .mini-ebay {
+        padding: 24px 15px;
+        margin-right: 10px;
+    }
+
+    .mini-img-ebay{
+        width: 45px;
+    }
+
+    .fc-usa span{
+        font-size: 20px;
+    }
+
+    .text-circle-title{
+        font-size: 15px;
+        color: #757575;
+    }
+
+    .text-circle{
+        font-size: 15px;
+        color: #919191;
+    }
+
+    .fas.fa-plus-circle{
+        color: #4CAF50;
+        font-size: 25px;
+    }
+
+    .plus-circle{
+        margin-top: 20px;
+    }        
+
+    #second-page{
+        margin-top: 25px;
+        height: 1350px;
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #second-page h4 {
+        margin-bottom: 30px;
+        font-size: 16px;
+    }
+
+    .box-viewed{
+        height: 160px;
+        width: 85%;
+        background-color: black;
+        margin: 0px 0px 40px 0px;
+        box-shadow: 1px 1px 6px 1px rgba(128, 128, 128, 0.20)
+    }
+
+    .box-viewed-two{
+        height: 200px;
+        width: 85%;
+        background-color: black;
+        margin: 0px 0px 40px 0px;
+    }
+
+    .also-viewed-one,
+    .also-viewed-two,
+    .also-viewed-three{
+        height: 160px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .also-viewed-four,
+    .also-viewed-five,
+    .also-viewed-six{
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+    }   
+
+    .pulse{
+        transition: 0.2s;
+    }
+
+    .pulse:hover{
+        animation-duration: 0.3s;
+        animation-delay: 0.3s;
+        animation-iteration-count: infinite;
+    }    
 
 }
